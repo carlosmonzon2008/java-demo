@@ -13,6 +13,6 @@ public class Demo_Main {
     @GET
     @Produces("text/plain")
     public String response(){
-        return "{'response': 'hello!'}";
+        return "{'response': 'hello'}";
     }
 }
