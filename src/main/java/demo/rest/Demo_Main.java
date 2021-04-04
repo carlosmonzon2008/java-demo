@@ -8,7 +8,7 @@ import javax.ws.rs.Produces;
  * Created by Carlos Monzón on 04/April/2021.
  */
 @Path("/")
-public class main {
+public class Demo_Main {
 
     @GET
     @Produces("text/plain")
