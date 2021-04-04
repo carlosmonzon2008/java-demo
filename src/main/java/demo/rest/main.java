@@ -13,6 +13,6 @@ public class Demo_Main {
     @GET
     @Produces("application/json")
     public String demo_main(){
-        return {"response": "hello"};
+        return {"response": "hello!"};
     }
 }
