@@ -58,6 +58,12 @@
             <artifactId>mongo-java-driver</artifactId>
             <version>3.2.2</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.json/json-simple -->
+        <dependency>
+            <groupId>org.json</groupId>
+            <artifactId>json-simple</artifactId>
+            <version>20090211</version>
+        </dependency>
     </dependencies>
     <build>
         <finalName>${project.artifactId}</finalName>
