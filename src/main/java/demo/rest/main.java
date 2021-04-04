@@ -14,7 +14,7 @@ public class Demo_Main {
     @Produces("application/json")
     public String demo_main(){
         JSONParser parser = new JSONParser();
-        JSONObject json_response = (JSONObject) parser.parse('{"response": "hello!"}');
+        JSONObject json_response = (JSONObject) parser.parse("{'response': 'hello!'}");
         return json_response;
     }
 }
