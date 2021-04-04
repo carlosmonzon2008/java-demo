@@ -3,6 +3,7 @@ package demo.rest;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
+import org.json.simple.JSONObject;
 
 /**
  * Created by Carlos Monzón on 04/April/2021.
@@ -14,7 +15,7 @@ public class Demo_Main {
     @Produces("application/json")
     public String demo_main(){
         JSONParser parser = new JSONParser();
-        json_response = parser.parse("{'response': 'hello!'}");
+        JSONObject json_response = (JSONObject) parser.parse("{'response': 'hello!'}");
         return json_response;
     }
 }
