@@ -13,6 +13,6 @@ public class Demo_Main {
 
     @RequestMapping(method = RequestMethod.GET)
     public String response() {
-        return "{'response': 'hello!'}";
+        return "{'response': 'hello'}";
     }
 }
