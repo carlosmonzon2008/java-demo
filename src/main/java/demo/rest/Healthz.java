@@ -1,18 +1,20 @@
 package demo.rest;
 
-import javax.ws.rs.GET;
-import javax.ws.rs.Path;
-import javax.ws.rs.Produces;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
 
 /**
+ * Healthz endpoint for liveness and readiness of the application
+ *
  * Created by Carlos Monzón on 04/April/2021.
  */
-@Path("/healthz")
+@RestController
+@RequestMapping("/healthz")
 public class Healthz {
 
-    @GET
-    @Produces("text/plain")
-    public String healthz(){
+    @RequestMapping(method = RequestMethod.GET)
+    public String healthz() {
         return "OK";
     }
 }
