@@ -1,18 +1,19 @@
 package demo.rest;
 
-import javax.ws.rs.GET;
-import javax.ws.rs.Path;
-import javax.ws.rs.Produces;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
 
 /**
  * Created by Carlos Monzón on 04/April/2021.
  */
-@Path("/")
+@RestController
+@RequestMapping("/")
 public class Demo_Main {
 
-    @GET
+    @RequestMapping(method = RequestMethod.GET)
     @Produces("text/plain")
-    public String response(){
+    public String response() {
         return "{'response': 'hello!'}";
     }
 }
