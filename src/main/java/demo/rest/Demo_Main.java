@@ -12,7 +12,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class Demo_Main {
 
     @RequestMapping(method = RequestMethod.GET)
-    @Produces("text/plain")
     public String response() {
         return "{'response': 'hello!'}";
     }
