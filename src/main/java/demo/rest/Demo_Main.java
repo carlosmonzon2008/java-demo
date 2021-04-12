@@ -12,13 +12,14 @@ import io.vertx.core.json.JsonObject;
 @RequestMapping("/api")
 public class Demo_Main {
 
-    private int MESSAGE_COUNT = 1;
+    private int MESSAGE_COUNT = 0;
     private String GRETTING_MESSAGE = "Hola.";
     private String HOSTNAME = System.getenv().getOrDefault("HOSTNAME", "unknown");
     private String BACKGROUND_COLOR = "#FF5733";
 
     @RequestMapping(method = RequestMethod.GET)
     public String response() {
+        MESSAGE_COUNT++
         JsonObject response = new JsonObject()
                             .put("msgCount", MESSAGE_COUNT)
                             .put("greettingMessage", GRETTING_MESSAGE)
