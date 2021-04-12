@@ -15,7 +15,7 @@ public class Demo_Main {
     @RequestMapping(method = RequestMethod.GET)
     public String response() {
         private String MESSAGE_COUNT = "1";
-        private String GRETTING_MESSAGE = "Hola";
+        private String GRETTING_MESSAGE = "Hola.";
         //private String HOSTNAME = System.getenv().getOrDefault("HOSTNAME", "unknown");
         private String BACKGROUND_COLOR = "#FF5733";
         JsonObject response = new JsonObject()
