@@ -35,7 +35,7 @@ public class Demo_Main {
                             .put("podName", HOSTNAME)
                             .put("backgroundColor", BACKGROUND_COLOR)
                             .put("User-Agent", userAgent);
-        response.setContentType("application/json");
+        //response.setContentType("application/json");
         return response.encode();
     }
 }
