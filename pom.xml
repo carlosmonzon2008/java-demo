@@ -86,12 +86,16 @@
             <artifactId>vertx-config</artifactId>
             <version>${vertex.version}</version>
       </dependency>
+      
+      <!-- Added during the test when trying to get a Response Header "content-type: application/json", but now it is not in using, so can be deleted. -->
       <!-- https://mvnrepository.com/artifact/javax.ws.rs/javax.ws.rs-api -->
       <dependency>
             <groupId>javax.ws.rs</groupId>
             <artifactId>javax.ws.rs-api</artifactId>
             <version>2.1.1</version>
       </dependency>
+      <!-- Can be deleted, ends here. -->
+      
     </dependencies>
 
 
