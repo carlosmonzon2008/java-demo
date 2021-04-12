@@ -41,10 +41,10 @@
     <p class="sans_big">Count: <div class="sans_big" id="msgCount"></div></p>
     </section>
     <section>
-    <p class="sans_less_big">Pod: <div class="sans_less_big" id="pod"></div></p>
+    <p class="sans_less_big">Pod: <div class="sans_less_big" id="podName"></div></p>
     </section>
     <section>
-    <p class="sans_less_big">Greeting: <div class="sans_less_big" id="hello"></div></p>
+    <p class="sans_less_big">Greeting: <div class="sans_less_big" id="greettingMessage"></div></p>
     </section>
   
     <script>      
@@ -58,11 +58,11 @@
             console.log("response: " +  this.responseText);
             message = JSON.parse(this.responseText);
             console.log(message);
-            // console.log(message.msgCount + " " + message.color);
-            document.body.style.background = message.color;
-            document.getElementById("pod").textContent = message.pod;
+            // console.log(message.msgCount + " " + message.backgroundColor);
+            document.body.style.background = message.backgroundColor;
+            document.getElementById("podName").textContent = message.podName;
             document.getElementById("msgCount").textContent = message.msgCount;
-            document.getElementById("hello").textContent = message.hello;
+            document.getElementById("greettingMessage").textContent = message.greettingMessage;
           }
        };
        // polledURL = "http://" + location.host + "/api";
