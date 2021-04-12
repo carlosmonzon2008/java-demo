@@ -1,6 +1,8 @@
 package demo.rest;
 
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import javax.ws.rs.core.MediaType;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RestController;
@@ -23,6 +25,7 @@ public class Demo_Main {
     //private String BACKGROUND_COLOR = "#FF0000";//Red
 
     @RequestMapping(method = RequestMethod.GET)
+    @GetMapping(produces = MediaType.APPLICATION_JSON_VALUE)
     //@RequestHeader(value = "User-Agent")
     public String response(@RequestHeader(value="User-Agent") String userAgent) {
         MESSAGE_COUNT++;
