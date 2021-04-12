@@ -25,7 +25,7 @@ public class Demo_Main {
     //private String BACKGROUND_COLOR = "#FF0000";//Red
 
     @RequestMapping(method = RequestMethod.GET)
-    @GetMapping(produces = MediaType.APPLICATION_JSON_VALUE)
+    @GetMapping(produces = MediaType.APPLICATION_JSON)
     //@RequestHeader(value = "User-Agent")
     public String response(@RequestHeader(value="User-Agent") String userAgent) {
         MESSAGE_COUNT++;
