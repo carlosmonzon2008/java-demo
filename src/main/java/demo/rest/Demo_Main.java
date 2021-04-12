@@ -19,7 +19,7 @@ public class Demo_Main {
 
     @RequestMapping(method = RequestMethod.GET)
     public String response() {
-        MESSAGE_COUNT++
+        MESSAGE_COUNT++;
         JsonObject response = new JsonObject()
                             .put("msgCount", MESSAGE_COUNT)
                             .put("greettingMessage", GRETTING_MESSAGE)
