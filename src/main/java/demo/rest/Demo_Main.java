@@ -2,6 +2,7 @@ package demo.rest;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RestController;
 import io.vertx.core.json.JsonObject;
 
@@ -22,13 +23,15 @@ public class Demo_Main {
     //private String BACKGROUND_COLOR = "#FF0000";//Red
 
     @RequestMapping(method = RequestMethod.GET)
-    public String response() {
+    //@RequestHeader(value = "User-Agent")
+    public String response(@RequestHeader(value="User-Agent") String userAgent) {
         MESSAGE_COUNT++;
         JsonObject response = new JsonObject()
                             .put("msgCount", MESSAGE_COUNT)
                             .put("greettingMessage", GRETTING_MESSAGE)
                             .put("podName", HOSTNAME)
-                            .put("backgroundColor", BACKGROUND_COLOR);
+                            .put("backgroundColor", BACKGROUND_COLOR)
+                            .put("User-Agent", userAgent);
         return response.encode();
     }
 }
