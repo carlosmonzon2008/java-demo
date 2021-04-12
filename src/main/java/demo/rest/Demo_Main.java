@@ -14,10 +14,10 @@ public class Demo_Main {
 
     @RequestMapping(method = RequestMethod.GET)
     public String response() {
-        private static final Integer MESSAGE_COUNT = 1;
-        private static final String GRETTING_MESSAGE = "Hola";
-        private static final String HOSTNAME = System.getenv().getOrDefault("HOSTNAME", "unknown");
-        private static final String BACKGROUND_COLOR = "#FF5733";
+        private int MESSAGE_COUNT = 1;
+        private String GRETTING_MESSAGE = "Hola";
+        private String HOSTNAME = System.getenv().getOrDefault("HOSTNAME", "unknown");
+        private String BACKGROUND_COLOR = "#FF5733";
         JsonObject response = new JsonObject()
                             .put("msgCount", MESSAGE_COUNT)
                             .put("greettingMessage", GRETTING_MESSAGE)
