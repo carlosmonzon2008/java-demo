@@ -16,6 +16,9 @@ public class Demo_Main {
     private String GRETTING_MESSAGE = "Hola.";
     private String HOSTNAME = System.getenv().getOrDefault("HOSTNAME", "unknown");
     private String BACKGROUND_COLOR = "#5bbf45";
+    //private String BACKGROUND_COLOR = "#6bbded";
+    //private String BACKGROUND_COLOR = "#f2f25e";
+    //private String BACKGROUND_COLOR = "#FF5733";
 
     @RequestMapping(method = RequestMethod.GET)
     public String response() {
