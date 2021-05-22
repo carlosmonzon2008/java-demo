@@ -25,9 +25,9 @@ public class Demo_Main {
     //private String BACKGROUND_COLOR = "#FF0000";//Red
     //private String BACKGROUND_COLOR = "Silver";//Silver
     //private String BACKGROUND_COLOR = "Aqua";//Aqua
-    //private String BACKGROUND_COLOR = "Bisque";//Bisque
+    private String BACKGROUND_COLOR = "Bisque";//Bisque
     //private String BACKGROUND_COLOR = "Coral";//Coral
-    private String BACKGROUND_COLOR = "Fuchsia";//Fuchsia
+    //private String BACKGROUND_COLOR = "Fuchsia";//Fuchsia
 
     @RequestMapping(method = RequestMethod.GET, produces={"application/json"})
     //@GetMapping(produces = MediaType.APPLICATION_JSON)
